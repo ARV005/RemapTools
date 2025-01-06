@@ -1,0 +1,262 @@
+/* FONTS */
+@font-face {
+    font-family: "San Francisco Light";
+    font-weight: 300;
+    src: url(/fonts/SFProText-Light.ttf);
+}
+@font-face {
+    font-family: "San Francisco Regular";
+    font-weight: 400;
+    src: url(/fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family: "San Francisco Medium";
+    font-weight: 500;
+    src: url(/fonts/SFProText-Medium.ttf);
+}
+@font-face {
+    font-family: "San Francisco Semibold";
+    font-weight: 600;
+    src: url(/fonts/SFProText-Semibold.ttf);
+}
+@font-face {
+    font-family: "San Francisco Bold";
+    font-weight: 700;
+    src: url(/fonts/SFProText-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "San Francisco Regular", sans-serif;
+}
+
+
+
+body{
+    margin:0;
+    background-color: #212529;
+}
+
+.page{
+    max-width: 1260px;
+
+}
+
+.header-container{
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 30px;
+}
+
+.logo{
+    margin: 30px 0px 0px 72px;
+    
+}
+
+
+.main-content{
+    display: flex;
+    margin: 30px 0px 0px 183px;
+    justify-content: space-between;
+
+}
+
+.sign-in{
+    margin-left: 100px;
+    margin-top: 70px;
+    background-color: #fff;
+    width: 414px;
+    height: 375px;
+    padding-left: 24px;
+    padding-top: 36px;
+    border-radius: 5px;
+}
+
+.form_title{
+    font-size: 28px;
+}
+
+.text_link{
+    margin-top: 12px;
+    font-size: 16px;
+    color: #212529;
+}
+
+.form_group{
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    
+}
+
+.btn{
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 162px;
+    height: 48px;
+}
+
+.btn_align{
+    padding-top: 24px;
+}
+
+a:link{
+    color: #0D6EFD;
+}
+
+.btn_text{
+    padding-left: 24px;
+    vertical-align: middle;
+}
+
+
+.form_input{
+    display: block;
+    width: 366px;
+    height: 48px;
+    font-size: 19px;
+    padding: 10px;
+    border: 1px solid #CFD4D9;
+    border-radius: 5px; 
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-text1{
+    color: #0D6EFD;
+    font-size: 48px;
+}
+.main-text2{
+    color: white;  
+    font-size: 48px;  
+}
+
+.services-list{
+    margin-top: 16px;
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-size: 19px;
+}
+
+.markers {
+	margin: 20px 0 20px 25px;
+	padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.markers li {
+	list-style-image: url(/img/Vector.png);
+	margin: 7px 0;
+    color: white;
+}
+
+.diagram{
+    margin: 38px 0 35px 182px;
+    width: 400px;
+    height: 300px;
+    z-index: 1;
+}
+
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Create-Account{
+    margin-left: 100px;
+    margin-top: 70px;
+    background-color: #fff;
+    width: 414px;
+    height: 421px;
+    padding-left: 24px;
+    padding-top: 36px;
+    border-radius: 5px;
+}
+
+.form-check-label1{
+    color: #6C757D;
+    padding: 0px; 
+
+}
+
+input::placeholder {
+    color: black;
+}
+
+.password-control {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 20px;
+	background: url(/img/glaz.svg) 0 0 no-repeat;
+    margin: auto;
+    align-items: center;
+}
+.password-control.view {
+	background: url(/img/glaz.svg) 0 0 no-repeat;
+    margin: auto;
+}
+
+body .password-field {
+    position: relative;
+    width: 366px;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid #CFD4D9;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    }
+
+    body .password-field input {
+        border: none;
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .password-field--input:focus {
+        outline: none;
+    }
+
+    body .password-field input::placeholder {
+        color: #000;
+        font-weight: normal;
+    }
+    
+    body .password-field #toggler {
+        position: relative;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    body .yey {
+        width: 30px;
+        border: none;
+        padding: 0;
+        background: transparent;
+    }
+
+    .copyright{
+        text-align: right;
+        color: white;
+        font-size: 16px;
+        opacity: 0.5;
+    }

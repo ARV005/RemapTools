@@ -1,0 +1,336 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* FONTS */
+@font-face {
+    font-family: "San Francisco Light";
+    font-weight: 300;
+    src: url(/fonts/SFProText-Light.ttf);
+}
+@font-face {
+    font-family: "San Francisco Regular";
+    font-weight: 400;
+    src: url(/fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family: "San Francisco Medium";
+    font-weight: 500;
+    src: url(/fonts/SFProText-Medium.ttf);
+}
+@font-face {
+    font-family: "San Francisco Semibold";
+    font-weight: 600;
+    src: url(/fonts/SFProText-Semibold.ttf);
+}
+@font-face {
+    font-family: "San Francisco Bold";
+    font-weight: 700;
+    src: url(/fonts/SFProText-Bold.ttf);
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    background-color: #212529;
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sidebar-menu{
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.footer{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.sidebar-line{
+    margin:25px 10px 9px 10px;
+    border-bottom: solid 2px white;
+    opacity: 0.1;
+}
+
+.btn{
+    background-color: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn:hover {
+    color: white;
+    border: none;
+  }
+
+.dropdown-menu{
+    background-color: #212529;
+    opacity: 0.9;
+    color: white;
+}
+.dropdown-item{
+    background-color: #212529;
+    opacity: 0.9;
+    color: white;
+}
+
+.titleName{
+    color: white;
+    padding: 32px 0 0 16px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.sidebar-nav_list{
+    padding:16px;
+    
+}
+.sidebar-nav_link{
+    text-decoration: none;
+    color: white;
+}
+.sidebar-nav_item{
+    display: flex;
+    
+    list-style-type: none;
+    width: 100%;
+    height: 38px;
+    color: white;
+    background-color: #212529;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.active-link{
+    background-color: #316BF4;
+    background-image: url("http://www.w3.org/2000/svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 5px;
+}
+
+.line_footer{
+    border-bottom: solid 2px white;
+    opacity: 0.1;
+    margin:9px 10px 9px 10px;
+    box-sizing: border-box;
+}
+
+
+.btn{
+    width: 100%;
+    height: 38px;
+    color: white;
+    background-color: #212529;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.Orders{
+    background-color: #316BF4;
+    background-image: url("http://www.w3.org/2000/svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.workspace{
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.orders-header{
+    width: 100%;
+    height: 78px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 72px;
+}
+
+.left-header{
+    display: flex;
+}
+
+.new-order{
+    width: 142px;
+    height: 38px;
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+    margin: 0 20px 0 40px;
+}
+
+.search-field{
+    width: 310px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DFE2E6;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search{
+    border: 0;
+    width: 269px;
+    height: 80%;
+}
+
+.search-button{
+    border: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;    
+}
+
+.buy-button{
+    width: 106px;
+    height: 38px;
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 5px; 
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+    margin-left: 24px;
+}
+
+.alert-list{
+    width: 50px;
+    height: 38px;
+    border: 1px solid #DFE2E6;
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    
+}
+
+.right-header{
+    display: flex;
+}
+.balance{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.credits-number{
+    font-family: "San Francisco Semibold";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 4px;
+}
+
+.orders-space{
+    background-color: #F8F9FA;
+    width: 100%;
+    height: 100vh;
+}
+
+.back-button{
+    width: 99px;
+    height: 38px;
+    background-color: white;
+    color: #212529;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #6C757D;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    margin: 20px 0 0 40px;
+}
+
+.orders-title{
+    margin: 32px 0 0 40px;
+    font-family: "San Francisco Semibold";
+    font-size: 40px;    
+    letter-spacing: -1px;
+}
+
+.select-area{
+    display: flex;
+    flex-direction: row;
+    margin: 32px 72px 0 40px;
+    gap: 12px;
+}
+
+.form-select{
+    width: 200px;
+    height: 38px;
+}
+
+.table{
+    width: 1048px; 
+    margin: 20px 72px 40px 40px;
+    border-radius: 5px;
+}
+
+.pages{
+    margin: 40px 0 60px 40px;
+    background-color:#F8F9FA;
+    color:#316CF4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1048px;
+}
