@@ -1,0 +1,86 @@
+.acc-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row; 
+    gap: 198px;  
+}
+
+.info-caption{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #212529;
+    margin-bottom:8px ;
+}
+
+.input-field{
+    width: 336px;
+    height: 38px;
+    background-color: white;
+    border: 1px solid #CFD4D9;
+    color: #212529;
+    border-radius: 4px;
+    padding: 9.5px 12px;
+    margin-bottom: 16px;
+}
+
+.change-button{
+    width: 129px;
+    height: 32px;
+    background-color: white;
+    border: 1px solid #212529;
+    color: #212529;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+}
+
+.notif-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 19px;   
+    margin-bottom: 16px;
+
+}
+
+.edit-notifications{
+    width: 514px;
+    height: 227px;
+    display: flex;
+    background-color: white;
+    border: 1px solid #DFE2E6;
+    padding: 10px 16px;
+    border-radius: 4px;
+    flex-direction: column;
+}
+
+.table>:not(caption)>*>* {
+    padding: 3.5px;
+}
+
+.save-notifications{
+    width: 128px;
+    height: 32px;
+    background-color: #0D6EFD;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+    margin: 0;
+}
+
+

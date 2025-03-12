@@ -1,0 +1,113 @@
+.ticked-caption{
+    margin: 40px 0 32px 0;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.order-ticket-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 40px;    
+    letter-spacing: -1px;
+    align-items: center; 
+}
+
+.ticked-status{
+    background-color:darkgoldenrod;
+    color: white;
+    border-radius: 40px;
+    width: 44px;
+    height: 20px;
+    white-space: nowrap;
+    font-family: "San Francisco Semibold";
+    font-size: 13px;
+    padding: 2px 8px;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} 
+
+.main-container{
+    display: flex;
+    width: 1100px;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 16px;
+}
+.messages-field{
+    width: 692px;
+    height: 564px;
+    border: 1px solid #DFE2E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+
+
+.details-info{
+    width: 336px;
+    height: 411px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #DFE2E6;
+    background-color: white;
+    padding: 16px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0px;
+}
+
+.det-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 19px;
+}
+
+.writemessage-menu{
+    width: 692px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.add-file{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #0D6EFD;
+    background-color: white;
+    margin-right: 8px;
+}
+
+.text-field{
+    width: 588px;
+    height: 48px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #6C757D;
+    color: #6C757D;
+    padding: 14px 25px 15px 17px;
+}
+
+.send-button{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #6C757D;
+    background-color: #0D6EFD;
+    
+}

@@ -1,0 +1,83 @@
+.order-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 40px;    
+    letter-spacing: -1px;
+    
+}
+
+.red-alert{
+    background-color: #DC3545;
+    color: white;
+    border-radius: 40px;
+    width: 44px;
+    height: 20px;
+    white-space: nowrap;
+    font-family: "San Francisco Medium";
+    font-size: 10px;
+    padding: 2px 8px;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.messages-container1{
+    width: 484px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.messages-leftcontent1{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    width: 311px;
+    height: 20px;
+}
+.messages-container1{
+    justify-content: stretch;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.text-description1{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #6C757D;
+}
+
+.trans-info{
+    width: 484px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trans-credits{
+    font-family: "San Francisco Semibold";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trans-details{
+    font-family: "San Francisco Regular";
+    font-size: 16px; 
+    text-align: left;   
+}
+
+.trans-date{
+    font-family: "San Francisco Regular";
+    font-size: 16px; 
+    color: #6C757D;
+    text-align: right;
+}
+
+.details-info{
+    align-items: center;
+}

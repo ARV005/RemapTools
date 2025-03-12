@@ -1,0 +1,294 @@
+.neworder-progressbar{
+    width: 1048px;
+    height: 48px;
+    margin: 32px 72px 0 40px;
+    gap: 150px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.new-order-title{
+    font-family: "San Francisco Semibold";
+    font-size: 40px;    
+    letter-spacing: -1px;
+}
+
+.progressbar-status{
+    width: 700px;
+    height: 45px;
+    
+}
+
+.label-status{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #6C757D;
+    
+}
+
+.active-label{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #212529;
+    
+}
+
+.active-label1{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #0D6EFD;
+    
+}
+
+.super-line{
+    margin: 0;
+    padding: 0;
+}
+
+.progressbar-labels{
+    width: 100%;
+    height: 17px;
+    gap: 190px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.work-area{
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0 0 40px;
+    gap: 20px;
+    width: 1500px;
+}
+
+.details{
+    width: 514px;
+    height: 100%;
+    gap: 20px;
+}
+.caption{
+    font-family: "San Francisco Semibold";
+    font-size: 19px; 
+}
+
+.details-info{
+    display: flex;
+    width: 514px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #DFE2E6;
+    align-items: center;
+}
+
+
+.down-file{
+    width: 126px;
+    height: 32px;
+    background-color: #0D6EFD;
+    color: white;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+    opacity: 0.5; 
+    border-radius: 4px;
+    border: 1px;
+}
+
+.text-status{
+    font-family: "San Francisco Semibold";
+    font-size: 13px; 
+    background-color: #0D6EFD;
+    color: #FFFFFF;
+    width: 88px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 20px;
+    letter-spacing: 0.08px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.text-description{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    color: #6C757D;
+    margin-right: 65px;
+}
+
+.messages-container{
+    width: 484px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.create-ticket{
+    width: 121px;
+    height: 32px;
+    background-color: white;
+    color: #212529;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #6C757D;
+    margin-left: 40px;
+    font-family: "San Francisco Regular";
+    font-size: 13px; 
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.details-description{
+    width: 514px;
+    height: 423px;
+    display: flex;
+    background-color: white;
+    border: 1px solid #DFE2E6;
+    border-radius: 4px;
+    padding: 16px;
+    
+}
+
+.otstup{
+    margin: 32px 0 16px 0;
+}
+.table>:not(caption)>*>* {
+    padding: 0px;
+}
+
+.text-comment{
+    width: 514px;
+    height: 138px;
+    border-radius: 4px;
+    color: #6C757D;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    border: 1px solid #DFE2E6;
+    border-radius: 4px;
+}
+
+.textarea-caption{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+}
+
+.textarea-button{
+    width: 105.41px;
+    height: 32px;
+    border: 1px solid #6C757D;
+    color: #6C757D;
+    opacity: 0.5;
+    padding: 0px;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+    border-radius: 4px;
+    letter-spacing: -0.32px;
+    margin-top: 16px;
+}
+
+.total-information{
+    width: 514px;
+    height: 191px;
+    display: flex;
+    background-color: white;
+    border: 1px solid #DFE2E6;
+    border-radius: 4px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* НЕПОНЯТНО ПОЧЕМУ!!!! */
+.orders-header{
+    width: 100%;
+    max-width: 1410px;
+}
+
+.stage-info{
+    width: 482px;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stage-info1{
+    width: 482px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.request-line{
+    margin: 0px;
+}
+
+.stage-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stage-credits{
+    font-family: "San Francisco Regular";
+    font-size: 16px;    
+}
+
+.egr-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 16px;
+    font-weight: bold; 
+}
+
+.egr-credits{
+    font-family: "San Francisco Regular";
+    font-size: 16px;    
+}
+
+.modrequests-caption{
+    font-family: "San Francisco Regular";
+    font-size: 16px;  
+}
+
+.modrequests-credits{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+}
+
+.disount-caption{
+    color: #198754;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+}
+
+.discount-credits{
+    color: #198754;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+}
+
+.total-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.total-credits{
+    font-family: "San Francisco Semibold";
+    font-size: 19px;
+    font-weight: bold;
+}

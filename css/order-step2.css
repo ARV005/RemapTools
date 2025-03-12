@@ -1,0 +1,348 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* FONTS */
+@font-face {
+    font-family: "San Francisco Light";
+    font-weight: 300;
+    src: url(/fonts/SFProText-Light.ttf);
+}
+@font-face {
+    font-family: "San Francisco Regular";
+    font-weight: 400;
+    src: url(/fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family: "San Francisco Medium";
+    font-weight: 500;
+    src: url(/fonts/SFProText-Medium.ttf);
+}
+@font-face {
+    font-family: "San Francisco Semibold";
+    font-weight: 600;
+    src: url(/fonts/SFProText-Semibold.ttf);
+}
+@font-face {
+    font-family: "San Francisco Bold";
+    font-weight: 700;
+    src: url(/fonts/SFProText-Bold.ttf);
+}
+
+.neworder-progressbar{
+    width: 1048px;
+    height: 48px;
+    margin: 32px 72px 0 40px;
+    gap: 150px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.new-order-title{
+    font-family: "San Francisco Semibold";
+    font-size: 40px;    
+    letter-spacing: -1px;
+}
+
+.progressbar-status{
+    width: 700px;
+    height: 45px;
+    
+}
+
+.label-status{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #6C757D;
+    
+}
+
+.active-label{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #212529;
+    
+}
+
+.active-label1{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #0D6EFD;
+    
+}
+
+.super-line{
+    margin: 0;
+    padding: 0;
+}
+
+.progressbar-labels{
+    width: 100%;
+    height: 17px;
+    gap: 190px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.alert{
+    width: 1048px;
+    height: 56px;
+    margin: 27px 72px 20px 40px;
+    color: #212529;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 1205px;
+    padding-left: 40px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.order-details{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 1154px;
+    gap: 16px;
+}
+
+.inputfield{
+    width: 100%;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #CFD4D9;
+}
+
+.order-caption{
+    font-family: "San Francisco Semibold";
+    font-size: 19px; 
+    margin: 8px 0 4px 0;
+}
+.content-area{
+    display: flex;
+    width: 336px;
+    height: 66px;
+    flex-direction: column;
+}
+
+.nameoflabel{
+    font-family: "San Francisco Regular";
+    font-size: 16px; 
+}
+
+.secstroke{
+    width: 692px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.gearbox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.order-total{
+    width: 336px;
+    height: 240px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.btn-outline-primary{
+    border: 1px solid #0D6EFD;
+    display: flex;
+    color: #0D6EFD;
+    justify-content: center;
+    font-family: "San Francisco Regular";
+    font-size: 16px; 
+    height: 38px;
+    margin-top: 60px;
+}
+
+
+.total-area{
+    width: 336px;
+    height: 240px;
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE2E6;
+    padding: 16px 20px 24px 20px;
+    border-radius: 4px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.flag{
+    width: 1000px;
+}
+
+.mod-request{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 23px;
+    
+}
+
+.discont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 23px;
+}
+.totals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 23px;
+}
+.agree{
+    display: flex;
+    flex-direction: row;
+    height: 23px;
+}
+
+.total-line{
+    margin: 8px 0;
+}
+
+.text-req{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #6C757D;
+}
+
+.text-discont{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #198754;
+}
+
+.text-totals{
+    font-family: "San Francisco Semibold";
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.black-text{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+}
+
+.blue-text{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #0D6EFD;
+    text-decoration: underline;
+}
+
+.confirm-button{
+    width: 296px;
+    height: 48px;
+    color: white;
+    background-color: #0D6EFD;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-outline-primary:active{
+    color: white;
+    background-color: #0D6EFD;
+}
+
+.lower-content{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.lower-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.lower-options{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lower-requests{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.table1{
+    width: 336px;
+    height: 361px;
+    display: flex;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #DFE2E6;
+}
+
+.table2{
+    width: 350px;
+    height: 330px;
+    display: flex;
+    background-color: #fff;
+    padding: 16px;    
+    border-radius: 4px;
+    border: 1px solid #DFE2E6;
+}
+
+.table-borderless{
+    border-spacing: 0 0;
+    padding: 0px;
+}
+
+td{
+    padding: 0px;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0px;
+}
+
+.text-description{
+    width: 331px;
+    height: 138px;
+    border-radius: 4px;
+    color: #6C757D;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    border: 1px solid #DFE2E6;
+}
+
+.textarea-caption{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    margin: 0;
+}
+
+.textarea-button{
+    width: 105.41px;
+    height: 32px;
+    border: 1px solid #6C757D;
+    color: #6C757D;
+    opacity: 0.5;
+    padding: 0px;
+    font-family: "San Francisco Regular";
+    font-size: 13px;
+    border-radius: 4px;
+    letter-spacing: -0.32px;
+}

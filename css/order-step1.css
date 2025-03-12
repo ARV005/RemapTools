@@ -1,0 +1,157 @@
+/* FONTS */
+@font-face {
+    font-family: "San Francisco Light";
+    font-weight: 300;
+    src: url(/fonts/SFProText-Light.ttf);
+}
+@font-face {
+    font-family: "San Francisco Regular";
+    font-weight: 400;
+    src: url(/fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family: "San Francisco Medium";
+    font-weight: 500;
+    src: url(/fonts/SFProText-Medium.ttf);
+}
+@font-face {
+    font-family: "San Francisco Semibold";
+    font-weight: 600;
+    src: url(/fonts/SFProText-Semibold.ttf);
+}
+@font-face {
+    font-family: "San Francisco Bold";
+    font-weight: 700;
+    src: url(/fonts/SFProText-Bold.ttf);
+}
+
+.neworder-progressbar{
+    width: 1048px;
+    height: 48px;
+    margin: 32px 72px 0 40px;
+    gap: 150px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.new-order-title{
+    font-family: "San Francisco Semibold";
+    font-size: 40px;    
+    letter-spacing: -1px;
+}
+
+.progressbar-status{
+    width: 700px;
+    height: 45px;
+    
+}
+
+.label-status{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #6C757D;
+    
+}
+
+.active-label{
+    font-family: "San Francisco Regular";
+    font-size: 14px; 
+    color: #212529;
+    
+}
+
+.progressbar-labels{
+    width: 100%;
+    height: 17px;
+    gap: 190px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.upload-title{
+    margin: 32px 0 20px 40px;
+    font-family: "San Francisco Semibold";
+    font-size: 19px;
+}
+
+.upload-file{
+    margin: 0 0 40px 40px;
+    width: 1048px;
+    height: 244px;
+    background-color: white;
+    padding: 16px;
+}
+
+.dotted-border{
+    display: flex;
+    border: dotted 2px #0D6EFD; 
+    width: 1016px;
+    height: 212px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.down-text{
+    padding-top: 20px;
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #0D6EFD;
+    margin: 0px;
+}
+
+.down-info{
+    font-family: "San Francisco Regular";
+    font-size: 16px;
+    color: #6C757D;
+}
+
+.recent-files{
+    width: 1048px;
+    height: 51px;
+    background-color: white;
+    border-radius: 4px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.files-align{
+    width: 1016px;
+    height:19px;
+    padding: 0 0 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filename{
+    font-family: "San Francisco Regular";
+    font-size: 16px; 
+}
+
+.filedate{
+    font-family: "San Francisco Regular";
+    font-size: 16px; 
+    color: #6C757D;  
+
+}
+
+.trash{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.super-line{
+    margin: 0;
+    padding: 0;
+}
