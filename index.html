@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemapTools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+    
+    <div class="header-container">
+        <a class="logo">
+            <img src="img/logo.svg" alt="RemapToolsLogo">
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div class="left-content">
+            <h1 class="main-text1">High quality</h1>
+            <h1 class="main-text2">chip tuning files for</h1>
+            <ul class="services-list">
+                <li>Cars</li>
+                <li>Trucks</li>
+                <li>Marine</li>
+                <li>Bike</li>
+                <li>ATV</li>
+                <li>Construction</li>
+            </ul>
+
+            <ul class="markers">
+                <li>Stage 1</li>
+                <li>Stage 2</li>
+                <li>EGR Delete</li>
+                <li>Stage 3</li>
+                <li>DPF Delete</li>
+                <li>AdBlue Off</li>
+            </ul>
+
+            <img src="img/Diagramm.svg" alt="" class="diagramm">
+        </div>
+        <div class="right-content">
+        <form class="sign-in">
+            
+                <h3 class="form_title">Sign in</h3>
+                <p class="text_link">Don't have an account? <a href="/register.html" class="Register">Register</a></p>
+            <!-- Тут убрать тег p -->
+                <div class="form_group">
+                    <input class="form_input" type="text" placeholder="Email Adress" name="uname" required>
+                    <p></p>
+                    <div class="password-field">
+                        <input type="password" style="position: absolute; z-index: 1;" id="fakePassword" placeholder="Password" />
+                        <span class="yey"><i id="toggler"style="position: absolute; z-index: 2;" class="far fa-eye"></i></span>
+                    </div>
+                </div>    
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" checked />
+                    <label class="form-check-label"> Remember me </label>
+                </div>
+                <div class="btn_align">   
+                  <button type="button" class="btn btn-primary">Sign in</button>
+                  <a href="#!" class="btn_text">Forgot your password?</a>
+                </div>    
+            </form>
+        <p class="copyright">© 2022 RemapTools.com</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

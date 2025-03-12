@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemapTools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/orders-header.css">
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <link rel="stylesheet" href="css/order-ticket.css">
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+          <div class="sidebar-menu">
+              <div class="sidebar-title">
+                  <h1 class="titleName">RemapTools</h1>
+              </div>
+              <hr class="sidebar-line">
+              <div class="sidebar-nav">
+                  <ul class="sidebar-nav_list">
+                      <li class="sidebar-nav_item"><a href="/ClientDashboard.html" class="sidebar-nav_link">
+                          <i class="bi bi-speedometer2"></i>
+                          <span>Dashboard</span>
+                      </a></li>
+                      
+                          <li class="sidebar-nav_item  active-link"><a href="" class="sidebar-nav_link">
+                              <i class="bi bi-bag-check"></i>
+                              <span>Orders</span>
+                      </a></li>
+                      
+                          <li class="sidebar-nav_item"><a href="" class="sidebar-nav_link">
+                              <i class="bi bi-grid"></i>
+                              <span>Transaction</span>
+                      </a></li>
+                      
+                          <li class="sidebar-nav_item"><a href="" class="sidebar-nav_link">
+                              <i class="bi bi-people"></i>
+                              <span>Pricelist</span>
+                      </a></li>
+                  </ul>
+              </div>
+          </div>
+              <div class="footer">
+                  <hr class="line_footer">
+              <!-- Кнопка для всплывающего меню -->
+                  <div class="btn-group dropup">
+                      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Alexbro@gmail.com
+                      </button>
+                      <ul class="dropdown-menu ">
+                      <!-- Всплывающие ссылки -->
+                          <li><a class="dropdown-item" href="#">New project</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="/account.html">Profile</a></li>
+                          <hr class="line_footer">
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                      </ul>
+                  </div>
+              </div>
+          
+        </div>
+            <div class="workspace">
+              <div class="orders-header">
+  
+                <div class="left-header">
+                  <button class="new-order"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                    </svg> New order</button>
+                  <div class="search-field">
+                      <input class="search"  placeholder="Search..." />
+                      <div class="vr"></div>
+                      <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg></button>
+                  </div>
+                </div>
+                  <div class="right-header">
+                    <button class="alert-list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                      </svg> 1</button>
+                    <p class="balance">Balance:</p>
+                    <p class="credits-number">5 credits</p>
+                    <button class="buy-button">Buy credits</button>
+                  </div>
+              </div>
+              <hr class="super-line">
+                <div class="orders-space">
+                    <button onclick="document.location='orders.html'" class="back-button"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                    </svg> Back</button>
+                    <div class="ticked-caption">
+                        <h1 class="order-ticked-caption">Ticked</h1>
+                        <p class="ticked-status">New</p>
+                    </div>
+                    <div class="main-container">
+                        <div class="messages-field">
+                            <p class="nomessages">No messages. Write a new message to open ticket.</p>
+                        </div>
+                        <div class="details-field">
+                            <h4 class="det-caption">Details</h4>
+                            <div class="details-info">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Vehicle type</td>
+                                        <td>Trucks</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Vehicle</td>
+                                        <td>Isuzu 838 (2014)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Filename</td>
+                                        <td style="color: #0D6EFD;">3984638944739847394u43...</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Registration</td>
+                                        <td>SU8374</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">File ref</td>  
+                                        <td>83463547364</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Engine (BHP)</td>
+                                        <td>9.8TD (362)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Gearbox</td>
+                                        <td>Auto</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">ECU</td>
+                                        <td>transtron</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Mileage</td>
+                                        <td> -</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Tool</td>
+                                        <td>bitbox</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600;">Mod requests</td>
+                                        <td>Stage 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left; font-weight: 600; white-space: nowrap;">Your comment</td>
+                                        <td> </td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+
+                        </div>
+                    <!--Закрываем main-container  -->
+                    </div>
+                    <div class="writemessage-menu">
+                        <button class="add-file"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0D6EFD" class="bi bi-paperclip" viewBox="0 0 16 16">
+                            <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0z"/>
+                          </svg>
+                        </button>
+                        <input type="text" class="text-field" placeholder="Write a message..." minlength="4" maxlength="8" size="10" />  
+                        <button class="send-button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-send-fill" viewBox="0 0 16 16">
+                            <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+                          </svg>
+                        </button>  
+                    </div>    
+                </div>
+            </div>  
+            <!--Закрывает workspace  --> 
+
+    </div>
+<!-- закрывает page -->
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemapTools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/orders-header.css">
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <link rel="stylesheet" href="css/order-step2.css">
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+          <div class="sidebar-menu">
+              <div class="sidebar-title">
+                  <h1 class="titleName">RemapTools</h1>
+              </div>
+              <hr class="sidebar-line">
+              <div class="sidebar-nav">
+                  <ul class="sidebar-nav_list">
+                      <li class="sidebar-nav_item"><a href="/ClientDashboard.html" class="sidebar-nav_link">
+                          <i class="bi bi-speedometer2"></i>
+                          <span>Dashboard</span>
+                      </a></li>
+                      
+                          <li class="sidebar-nav_item  active-link"><a href="" class="sidebar-nav_link">
+                              <i class="bi bi-bag-check"></i>
+                              <span>Orders</span>
+                      </a></li>
+                      
+                          <li class="sidebar-nav_item"><a href="" class="sidebar-nav_link">
+                              <i class="bi bi-grid"></i>
+                              <span>Transaction</span>
+                      </a></li>
+                      
+                          <li class="sidebar-nav_item"><a href="/Pricelist.html" class="sidebar-nav_link">
+                              <i class="bi bi-people"></i>
+                              <span>Pricelist</span>
+                      </a></li>
+                  </ul>
+              </div>
+          </div>
+              <div class="footer">
+                  <hr class="line_footer">
+              <!-- Кнопка для всплывающего меню -->
+                  <div class="btn-group dropup">
+                      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Alexbro@gmail.com
+                      </button>
+                      <ul class="dropdown-menu ">
+                      <!-- Всплывающие ссылки -->
+                          <li><a class="dropdown-item" href="#">New project</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="/account.html">Profile</a></li>
+                          <hr class="line_footer">
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                      </ul>
+                  </div>
+              </div>
+          
+        </div>
+            <div class="workspace">
+              <div class="orders-header">
+  
+                <div class="left-header">
+                  <button class="new-order"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                    </svg> New order</button>
+                  <div class="search-field">
+                      <input class="search"  placeholder="Search..." />
+                      <div class="vr"></div>
+                      <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg></button>
+                  </div>
+                </div>
+                  <div class="right-header">
+                    <button class="alert-list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                      </svg> 1</button>
+                    <p class="balance">Balance:</p>
+                    <p class="credits-number">5 credits</p>
+                    <button class="buy-button">Buy credits</button>
+                  </div>
+              </div>
+              <hr class="super-line">
+              <div class="orders-space">
+                <button onclick="document.location='orders.html'" class="back-button"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                </svg> Back</button>
+                <div class="neworder-progressbar">
+                  <h1 class="new-order-title">New order</h1>
+
+                  <div class="progressbar-status">
+                      <div class="progressbar-labels">
+                          <p class="label-status active-label1">1. Upload a file</p>
+                          <p class="label-status active-label">2. Mod requests</p>
+                          <p class="label-status">3. Confirmation</p>
+                      </div>
+                      <!-- Прогрессбар -->
+                      <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar progress-bar-striped bg-info" style="width: 50%"></div>
+                      </div>    
+                  </div>
+                </div>
+                <!-- Алерт -->
+                <div class="alert alert-warning" role="alert">
+                    Our file matching service couldn’t find any match in our database. Please continue by entering the information in the form below
+                </div>
+                <div class="main-container">
+                    <div class="order-details">
+                        <H4 class="order-caption">Order details</H4>
+
+                        <div class="content-area">
+                            <label class="nameoflabel">Registration</label>
+                            <input type="text" class="inputfield">
+                        </div>
+
+                        <div class="secstroke">
+                            <div class="content-area">
+                                <label class="nameoflabel">Make</label>
+                                <input type="text" class="inputfield">
+                            </div>
+                            <div class="content-area">
+                                <label class="nameoflabel">Model</label>
+                                <input type="text" class="inputfield">
+                            </div> 
+                        </div>
+
+                        <div class="secstroke">
+                            <div class="content-area-small">
+                                <label class="nameoflabel">Engine</label>
+                                <input type="text" class="inputfield">
+                            </div>
+                            <div class="content-area-small">
+                                <label class="nameoflabel">BHP</label>
+                                <input type="text" class="inputfield">
+                            </div> 
+                            <div class="content-area-small">
+                                <label class="nameoflabel">Year</label>
+                                <input type="text" class="inputfield">
+                            </div> 
+                            <div class="content-area-small">
+                                <label class="nameoflabel">Mileage</label>
+                                <input type="text" class="inputfield">
+                            </div> 
+                        </div>
+                        <div class="gearbox">
+                            <p>Gearbox</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Automatic
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Manual
+                                </label>
+                            </div>
+                        </div>
+                        <div class="secstroke">
+                            <div class="content-area">
+                                <label class="nameoflabel">Tool used</label>
+                                <input type="text" class="inputfield">
+                            </div>
+                            <div class="content-area">
+                                <label class="nameoflabel">ECU type</label>
+                                <input type="text" class="inputfield">
+                            </div> 
+                        </div>
+                        <!-- Код радиокнопок -->
+                        <div class="btn-group" role="group" aria-label="Default button group">
+                            <button type="button" class="btn btn-outline-primary">Cars</button>
+                            <button type="button" class="btn btn-outline-primary">Trucks</button>
+                            <button type="button" class="btn btn-outline-primary">Agriculture</button>
+                            <button type="button" class="btn btn-outline-primary">Marine</button>
+                            <button type="button" class="btn btn-outline-primary flag">Bike or ATV</button>
+                            <button type="button" class="btn btn-outline-primary">Construction</button>
+                            <button type="button" class="btn btn-outline-primary">Gearbox</button>
+                        </div>
+                        <div class="lower-content">
+                            <div class="lower-requests">
+                                <H4 class="order-caption">Mod requests</H4>
+                                <div class="table1">
+                                    <table class="table table-borderless">
+                                          <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                    </label>
+                                                  </div>
+                                            </td>
+                                            <td>Stage 1</td>
+                                            <td style="text-align: right; font-weight: bold;">1 credit</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Stage 2</td>
+                                            <td style="text-align: right; font-weight: bold;">1 credit</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>EGR delete</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>DPF delete</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>GPF/OPF Delete</td>
+                                            <td style="text-align: right; font-weight: bold;">1 credit</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>AdBlue off</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Decat</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Vmax</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>DTC remove</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Pop & Bang / Hardcut</td>
+                                            <td style="text-align: right; font-weight: bold;">1 credit</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Original</td>
+                                            <td style="text-align: right; font-weight: bold;">1 credit</td>
+                                          </tr>
+                                      </table>
+                                </div>
+                                <p class="textarea-caption">Comment</p>
+                                <textarea class="text-description" id="story" name="story" rows="5" cols="33">Any extra information about the vehicle or special requests, please write it here
+                                </textarea>
+                                <button class="textarea-button">Add comment</button>
+                            </div>
+
+                            <div class="lower-options">
+                                <div class="lower-header">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                    </div>
+                                    <H4 class="order-caption">Extra options</H4>
+                                </div>
+                                <div class="table2">
+                                    <table class="table table-borderless">
+                                        <tr>
+                                          <td style="width:10px"><div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                          </div></td>
+                                          <td>Checksum</td>
+                                          <td style="text-align: right; font-weight: bold;">0</td>
+                                        </tr>
+                                        <tr>
+                                          <td style="width:10px"><div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            </label>
+                                          </div></td>
+                                          <td>Swirl Flaps</td>
+                                          <td style="text-align: right; font-weight: bold;">0</td>
+                                        </tr>
+                                        <tr>
+                                          <td style="width:10px"> <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                            </label>
+                                          </div></td>
+                                          <td>Hot start / cold</td>
+                                          <td style="text-align: right; font-weight: bold;">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>MAF off</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Start / stop system off</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Anti lag</td>
+                                            <td style="text-align: right; width:50px; font-weight: bold;">1 credit</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Launch control</td>
+                                            <td style="text-align: right; width:45px; font-weight: bold;">1 credit</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Performance gauge BMW/MINI</td>
+                                            <td style="text-align: right; font-weight: bold;" >0</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>Cylinder on demand</td>
+                                            <td style="text-align: right; font-weight: bold;">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10px"><div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                </label>
+                                              </div></td>
+                                            <td>E85 Flexfuel</td>
+                                            <td style="text-align: right; font-weight: bold;">1 credit</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-total">
+                        <div class="total-area">
+                            <div class="mod-request">
+                                <p class="text-req">Mod requests</p>
+                                <p class="text-req">4 credits</p>
+                            </div>
+                            <div class="discont">
+                                <p class="text-discont">Discount</p>
+                                <p class="text-discont">-2 credits</p>  
+                            </div>
+                            <div class="totals">
+                                <p class="text-totals">Total</p>
+                                <p class="text-totals">2 credits</p>
+                            </div>
+                            <hr class="total-line">
+                            <div class="agree">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div>
+                                <p class="black-text">Yes, I agree to the&nbsp;</p>
+                                <p class="blue-text">no refund policy</p>
+                            </div>
+                            <button class="confirm-button">Confirm order</button>
+                        </div>
+                    </div>  
+                <!--Закрывает Main-container  --> 
+                </div>
+            <!-- закрывает workspace -->
+            </div>
+                
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
